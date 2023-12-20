@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js.js"></script>
+    <title>Страница 3</title>
+</head>
+<body>
+<header>
+    <img src="cow.jpg" alt="Логотипчик" onclick="window.location.href='index.html'">
+</header>
+<nav>
+    <ul>
+        <li><a href="1.html">Страница 1</a></li>
+        <li><a href="2.html">Страница 2</a></li>
+        <li><a href="3.html">Страница 3</a></li>
+    </ul>
+</nav>
+<section>
+    <h1>Страница 3</h1>
+    <img class="animation" src="wolf.jpg" alt="Картинка 3">
+    <p>Это содержание страницы 3. Нажмите на логотип в левом верхнем углу, чтобы вернуться на главную страницу.</p>
+    <a><br><br>Сумма чисел:<br></a>
+
+    <input type="text" id="num1"> +
+    <input type="text" id="num2">
+
+    <script type="text/javascript">
+        function calc() {
+            let a = document.getElementById("num1").value;
+            let b = document.getElementById("num2").value;
+
+            if (isNaN(a) || isNaN(b)) {
+                alert("Ошибка ввода! Введите число!");
+        return;
+    }
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+
+    let result = a + b;
+
+    alert(result);
+}
+    </script>
+
+    <button onclick="calc()">Посчитать</button>
+
+    <form name="forma1">Укажите ваш пол:<br>
+        <input type="radio" name="sex" value="man" checked> мужской
+        <input type="radio" name="sex" value="woman"> женский
+    </form>
+
+    <form name="forma1">Какой язык вы хотите изучать:
+        <select name="language" size="1">
+            <option selected value="html">html
+            <option value="php">php
+            <option value="java">java
+            <option value="kotlin">kotlin
+            <option value="python">python
+        </select><br><br>
+    </form>
+
+    <form name="forma1">
+        <label for="load">Выберите файл: </label>
+        <input type="file" name="load" size="30">
+    </form>
+</section>
+<footer>
+    &copy; 2023 Made by Glebik
+</footer>
+</body>
+</html>
